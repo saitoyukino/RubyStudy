@@ -1,5 +1,0 @@
-
-
-
-puts "Hello World"
-
