@@ -48,7 +48,11 @@ num1 = ARGV[1].to_i
 def multi(width)
   (1..width).each do |num1|
     (1..width).each do |num2|
-      print(" ",num1*num2);
+      if num1*num2<=9
+        print("0",num1*num2," ");
+      else
+        print(num1*num2," ");
+      end
     end
     print("\n");
   end
