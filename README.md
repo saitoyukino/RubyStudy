@@ -1,6 +1,6 @@
-# Ruby
+# Ruby課題
 
-Rubyの課題リポジトリです。毎週アップしますので次週までにPRにて提出してください
+Rubyの課題アップ/提出リポジトリです。毎週アップしますので次週までにPRにて提出してください
 
 - 授業資料  
 https://github.com/y-matsumoto/Lecture2017
