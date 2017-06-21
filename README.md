@@ -3,7 +3,7 @@
 Rubyの課題アップ/提出リポジトリです。毎週アップしますので次週までにPRにて提出してください
 
 - 授業資料  
-https://github.com/y-matsumoto/Lecture2017
+https://github.com/y-matsumoto/Lecture2017/blob/master/lecture/Ruby/README.md
 
 - 授業用チーム  
 https://github.com/Tech-C2017
