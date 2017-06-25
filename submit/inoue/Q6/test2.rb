@@ -44,15 +44,18 @@ def discount
     g[count] = gets.chomp
     # p g
 
-    g[count] = g[count].to_i(10)
-
     if g[count] == 'end'
-      # p g.inject(:+)
-      break
-    elsif g[count] == 0
-      # p g.inject(:+)
+      puts 'End'
+      g[count] = g[count].to_i(10)
       break
     end
+
+    g[count] = g[count].to_i(10)
+
+    next unless g[count] == 0
+    # p g.inject(:+)
+    puts 'Error'
+    exit
   end
 
   result = g.inject(:+) * 0.8
