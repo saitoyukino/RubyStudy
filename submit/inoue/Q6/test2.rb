@@ -44,6 +44,8 @@ def discount
     g[count] = gets.chomp
     # p g
 
+    exit if g[0] == 'end'
+
     if g[count] == 'end'
       puts 'End'
       g[count] = g[count].to_i(10)
