@@ -111,11 +111,19 @@ def game()
       jankens = ["グー", "チョキ", "パー"]
 
       puts "あなたの手:#{jankens[player_hand]}, わたしの手:#{jankens[program_hand]}"
+<<<<<<< HEAD
+      diff = player_hand - program_hand
+=======
+>>>>>>> 92ba84d5f09a4d4b96257408d42359d2fb8af95f
     if player_hand == program_hand
       puts "あいこ"
       win[2] += 1
       # 返り値を返す
+<<<<<<< HEAD
+    elsif diff == -1 || diff == 2
+=======
     elsif player_hand < program_hand
+>>>>>>> 92ba84d5f09a4d4b96257408d42359d2fb8af95f
       puts "あなたの勝ちです"
       win[0] += 1
 
