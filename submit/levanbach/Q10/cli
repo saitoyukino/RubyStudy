@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+# coding: utf-8
+
+require 'thor'
+
+class Test < Thor
+  default_command :say
+  desc 'say','say : hello'
+  def say
+   puts'MBIを計算します。'
+print'あなたの身長(m)を入力してください：'
+input_height = gets.chomp
+print'あなたの体重(kg)を入力してください：'
+input_weight = gets.chomp
+bmi = input_weight.to_f / (input_height.to_f ** 2)
+
+puts #文章に間を開ける
+
+if bmi < 18.5
+evaluation = "未 満 低 体重。"
+elsif bmi >= 18.5 && bmi < 25
+evaluation = "未 満 普通 体重"
+elsif bmi >= 25 && bmi < 30
+evaluation = "未 満 肥 満 (1 度"
+elsif bmi >= 30 && bmi < 35
+evaluation = "未 満 肥 満 (2 度) "
+elsif bmi >= 35 && bmi < 40
+evaluation = "未 満 肥 満 (3 度)"
+elsif bmi > 40
+evaluation = "以上 肥 満 (4 度)"
+end
+puts"あなたのBMIは#{bmi}です。"
+sleep 1
+puts
+puts"#{evaluation}"
+
+  end
+end
+
+Test.start
