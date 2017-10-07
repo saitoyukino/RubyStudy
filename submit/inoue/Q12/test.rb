@@ -126,26 +126,40 @@ puts()
 1 5 25 125 625
 ```
 =end
+
+
+
 puts 'Q3'
 
 class Multi
   def initialize(n)
     num = 0
+    @ary = []
     while num < 5 do
-      print n ** num
-      print ' '
+      @ary << n ** num
       num = num + 1
+    end
+  end
+
+  def disp
+    @ary.each do |a|
+      print a
+      print ' '
     end
   end
 end
 
 two = Multi.new(2)
+two.disp
 puts ''
 three = Multi.new(3)
+three.disp
 puts ''
 four = Multi.new(4)
+four.disp
 puts ''
 five = Multi.new(5)
+five.disp
 puts ''
 
 # two.cal
