@@ -1,5 +1,5 @@
 begin
-    file = File.open("./test02.html")
+    file = File.open("./Q14_02.html")
     str = ""
     
     file.each_line do |file|
@@ -15,13 +15,15 @@ begin
         print "%s," % line
     end
     
+    print "\n"
+    
     print "city="
-    str.to_s.scan(/&?(.+?)&/) do |line|
+    str.to_s.scan(/&city=(.+?)&/) do |line|
         print "%s," % line
     end
     
 rescue => e
-    print "erroe:", e.message
+    print "error:", e.message
 ensure
     file.close
 end
