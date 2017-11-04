@@ -64,6 +64,6 @@ when d then
  puts "存在しません。存在するidを入力してください"
 	end
 	else 
-	puts "1-4^まで入力してください"
+	puts "1-4まで入力してください"
 	end
 end
