@@ -10,7 +10,7 @@ doc.xpath('text = page(/<div class="ArticleBody_body_2ECha">(.*)<\/div>/)').each
 puts node.xpath('text').text
 doc.xpath('time = page(/<div.*?>(.*?)年(.*?)月(.*?)日(.*?)更新<\/div>/)').each do |node|
 puts node.xpath('time').text
-doc.xpath('img_link = page(/<div class="LazyImage_container_1Z7A0 > <\/img src="(.*)"/)').each do |node|
+doc.xpath('img_link = page(/<div class="LazyImage_container_1Z7A0 > <\/img src="(.*?)"/)').each do |node|
 puts node.xpath('img_link').text
 end
 
