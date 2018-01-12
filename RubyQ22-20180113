@@ -1,0 +1,27 @@
+# 課題22
+
+## 1.下記仕様に合わせてサイトよりクローリングを行いデータをスクレイピングするプログラムを作成せよ
+
+未定
+
+### 仕様
+
+### ターゲットサイト
+
+
+### 記事から取得するデータ
+
+
+### 実行結果例
+
+```
+
+```
+
+### コード条件
+- クラス、メソッドをなるべく使うこと
+
+### ヒント
+https://docs.ruby-lang.org/ja/latest/library/open=2duri.html  
+http://www.nokogiri.org/  
+http://docs.seattlerb.org/mechanize/  
