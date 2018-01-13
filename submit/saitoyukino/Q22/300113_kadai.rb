@@ -24,11 +24,7 @@ Anemone.crawl("https://movies.yahoo.co.jp/ranking/index.html",opts) do |doc|
     else
       p tmp
     end
-    if (tmp.empty?)
-      p page.doc.xpath('//*[@id="mv"]/div/section').text
-    else
-      p tmp
-    end
+    p page.doc.xpath('//*[@id="mv"]/div/section/p/span').text
   end
   doc.focus_crawl do |page|
     page.links.keep_if do |link|
